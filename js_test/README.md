@@ -1,65 +1,65 @@
 # JavaScript Test 
 
-## Complete all questions to the best of your abilities. You can use google, but you cannot ask other students or teachers for help. Also, do not copy code. 
+## Vervollständige alle Fragen soweit es Dir möglich ist. Du darfst Google nutzen, aber du darfst keine anderen Studenten oder Lehrer um Hilfe bitten. Genausowenig darfst du Code kopieren. 
 
-### Create an index.js file and work from there. Please do not forget to comment in the question number above your answers.
+### Erstelle eine index.js Datei und arbeite von da aus. Bitte vergiss nicht, die Fragen als Kommentar über deiner Antwort zu platzieren.
 
-1. Write a program to display the city name if the string begins with "Los" or "New" otherwise return "The city name does not begin with Los or New". 
+1. Schreibe ein Programm, das den Städtenamen anzeigt, aber nur, wenn es mit "Los" oder "New" beginnt, sonst soll es zurückgeben: "Dieser Städtename beginnt nicht mit Los oder New". 
 
-2. Write a program to compute the sum of three elements of a given array of integers. The length of the array must be 3.  
-* **Example**
+2. Schreibe ein Programm, das die Summe von allen Elementen eines gegebenen Arrays von Integers ausrechnet. Die Länge des Arrays muss mindestens 3 sein.  
+* **Beispiel**
 * [5, 10, 15] ➞ 30
 
-3. Given two strings, firstName and lastName, return a single string in the format "last, first".
-* **Examples**
+3. Gegeben sind zwei Strings, firstName und lastName, gib einen einzelnen String zurück im Format "lastName, firstName".
+* **Beispiele**
 * "John", "Doe" ➞ "Doe, John"
 * "Mary", "Jane" ➞ "Jane, Mary"
 
-4. Write a program that takes an integer and returns true if it's divisible by 100, otherwise return false.
-* **Examples**
+4. Schreibe ein Programm dass ein Integer bekommt und true zurückgibt, wenn es durch 100 teilbar ist, ansonsten gibt es false zurück.
+* **Beispiele**
 * 1 ➞ false
 * 1000 ➞ true
 * 100 ➞ true
 
-5. Write a program that adds a string ending to each item in an array.
-* **Examples & Expected output**
+5. Schreibe ein Programm, dass eine String-Endung an jedes Teil eines Arrays anhängt.
+* **Beispiele & erwarteter Output**
 * ["clever", "meek", "hurried", "nice"], "ly" ➞ ["cleverly", "meekly", "hurriedly", "nicely"]
 * ["new", "pander", "scoop"], "er" ➞ ["newer", "panderer", "scooper"]
 * ["bend", "sharpen", "mean"], "ing" ➞ ["bending", "sharpening", "meaning"]
 
-6. Write a program that checks whether a number is even or odd and returns "even" for even numbers and "odd" for odd numbers.
-* **Examples & Expected Output**
-* 3 ➞ "3 is odd"
-* 146 ➞ "146 is even"
-* 19 ➞ "19 is odd"
+6. Schreibe eine Programm, dass checkt, ob eine Zahl gerade oder ungerade ist und "gerade" für gerade Zahlen und "ungerade" für ungerade Zahlen zurückgibt..
+* **Beispiele & erwarteter Output**
+* 3 ➞ "3 ist ungerade"
+* 146 ➞ "146 ist gerade"
+* 19 ➞ "19 ist ungerade"
 
-7. You are given 2 out of 3 angles of a triangle, in degrees e.g. 29° and 59°. Write a program that classifies the missing angle (the third angle of a triangle) as either "acute", "right", or "obtuse" based on its degrees.
+7. Gegeben sind zwei von drei Winkeln eines Dreiecks, in Grad, z.B. 29° und 59°. Schreibe ein Programm, dass den fehlenden (dritten) Winkel berechnet und klassifiziert, entweder als "spitz", "rechter Winkel", oder "stumpf" basierend auf seiner Gradzahl.
 
-* **Notes**
-* An acute angle is smaller than 90°.
-* A right angle is exactly 90°.
-* An obtuse angle is greater than 90°  (but smaller than 180°).
-* For example: 11°, 20° should return "obtuse", since the missing angle would be 149°, which makes it obtuse.
+* **Notizen**
+* Ein spitzer Winkel ist kleiner als 90°.
+* Ein rechter Winkel ist genau 90°.
+* Ein stumpfer Winkel ist größer als 90°  (aber kleiner als 180°).
+* Zum Beispiel: 11°, 20° sollte zurückgeben "stumpf", weil der fehlende Winkel wäre 149°, was ihn stumpf macht.
 
-* **Examples**
-* 27°, 59° ➞ Then the third angle is 92° so it is "obtuse"
-* 135°, 11° ➞ The third angle is "acute"
-* 45°, 45° ➞ The third angle is a "right angle"
+* **Beispiele**
+* 27°, 59° ➞ Dann ist der dritte Winkel 92° also "stumpf"
+* 135°, 11° ➞ Dann ist der dritte Winkel "spitz"
+* 45°, 45° ➞ Dann ist der dritte Winkel "rechter Winkel"
 
-8. Make a variable with the string value of "maria jane jones". Convert each first letter to uppercase. Make sure your code works for any three names e.g. "john james smith". 
+8. Erzeuge eine Variable mit dem String Wert "maria jane jones". Konvertiere jeden ersten Buchstaben zu Großbuchstaben. Stelle sicher, dass dein Code für alle möglichen Inputs mit drei Namen funktioniert, z.B. auch für "john james smith". 
 
-9. Write a program that takes a string and returns the word count. The string will be a sentence.
-* **Examples Expected output**
-* "This is an example" ➞ 4
-* "One more example for good measure" ➞ 6
-* "JavaScript is fun, right?" ➞ 4
+9. Schreibe ein Programm, dass einen String nimmt und die Anzahl der Wörter zurückgibt. Der String ist ein Satz.
+* **Beispiele & erwarteter Output**
+* "Dies ist ein Beispiel" ➞ 4
+* "Noch ein Beispiel für eine gute Messung" ➞ 7
+* "JavaScript macht Spaß, oder?" ➞ 4
 
-10. Write a program to multiply each value in an array by the number of items in that array.
-* **Examples**
+10. Schreibe ein Programm, dass jeden Wert eines Arrays mit der Anzahl der Elemente im Array multipliziert und diese Werte in einem Array zurückgibt
+* **Beispiele**
 * [2, 3, 1, 0] (2 * 4), (3 * 4), (1 * 4), (0 * 4) ➞ [8, 12, 4, 0] 
 * [4, 1, 1] ➞ [12, 3, 3]
 * [1, 0, 3, 3, 7, 2, 1] ➞  [7, 0, 21, 21, 49, 14, 7]
 * [0] ➞ [0]
 
-## Good luck! :)
+## Viel Erfolg! :)
 
