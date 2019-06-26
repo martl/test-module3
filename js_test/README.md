@@ -2,7 +2,7 @@
 
 ## Vervollständige alle Fragen soweit es Dir möglich ist. Du darfst Google nutzen, aber du darfst keine anderen Studenten oder Lehrer um Hilfe bitten. Genausowenig darfst du Code kopieren. 
 
-### Erstelle eine index.js Datei und arbeite von da aus. Bitte vergiss nicht, die Fragen als Kommentar über deiner Antwort zu platzieren.
+### Erstelle eine ${vorname}.js Datei und arbeite von da aus. Wenn du z.B. Martina mit Vornamen heißt, erstelle eine martina.js. Bitte vergiss nicht, die Fragen als Kommentar über deiner Antwort zu platzieren.
 
 1. Schreibe ein Programm, das den Städtenamen anzeigt, aber nur, wenn es mit "Los" oder "New" beginnt, sonst soll es zurückgeben: "Dieser Städtename beginnt nicht mit Los oder New". 
 
