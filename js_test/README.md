@@ -42,7 +42,7 @@
 * Zum Beispiel: 11°, 20° sollte zurückgeben "stumpf", weil der fehlende Winkel wäre 149°, was ihn stumpf macht.
 
 * **Beispiele**
-* 27°, 59° ➞ Dann ist der dritte Winkel 92° also "stumpf"
+* 29°, 59° ➞ Dann ist der dritte Winkel 92° also "stumpf"
 * 135°, 11° ➞ Dann ist der dritte Winkel "spitz"
 * 45°, 45° ➞ Dann ist der dritte Winkel "rechter Winkel"
 
