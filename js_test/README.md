@@ -1,6 +1,6 @@
 # JavaScript Test 
 
-## Vervollständige alle Fragen soweit es Dir möglich ist. Du darfst Google nutzen, aber du darfst keine anderen Studenten oder Lehrer um Hilfe bitten. Genausowenig darfst du Code kopieren. 
+## Vervollständige alle Fragen soweit es Dir möglich ist. Du darfst Google und Bücher benutzen, aber du darfst keine anderen Studenten oder Lehrer um Hilfe bitten. Genausowenig darfst du Code kopieren. 
 
 ### Erstelle eine ${vorname}.js Datei und arbeite von da aus. Wenn du z.B. Martina mit Vornamen heißt, erstelle eine martina.js. Bitte vergiss nicht, die Fragen als Kommentar über deiner Antwort zu platzieren.
 
