@@ -1,0 +1,67 @@
+function(Stadtenamen){
+    var a =
+}
+
+
+
+/* 2.Schreibe ein Programm, das die Summe von allen Elementen eines gegebenen Arrays von Integers ausrechnet. Die Länge des Arrays muss mindestens 3 sein.
+
+    Beispiel
+    [5, 10, 15] ➞ 30
+*/
+
+/*var ergebnisArray =[];
+var ausrechnenArray =[17, 20, 3]
+
+for( var i=0; i<ausrechnenArray.length; i=i+i+i)
+    ergebnisArray=ergebnisArray+ ausrechnenArray[i]
+}
+console.log(ergebnisArray)
+
+
+/* 4. Schreibe ein Programm dass ein Integer bekommt und true zurückgibt, wenn es durch 100 teilbar ist, ansonsten gibt es false zurück.
+    Beispiele
+        1 ➞ false
+    1000 ➞ true
+    100 ➞ true
+    */
+
+   /* let teilbarArray = 100;
+    let ergebnisArray =[];
+
+     //for(let i=100;i<teilbarArray;i=i+100){
+       //  console.log(i);
+     
+     for(let i=1; i<teilbarArray; i=i++){
+        if(i%100==0){
+            console.log(`${i} ist durch 100 teilbar`)
+
+        }
+       // else{console.log(`${i} ist nicht durch 100 teilbar`)}
+    };
+   
+
+
+    /* Schreibe ein Programm, dass eine String-Endung an jedes Teil eines Arrays anhängt.
+Beispiele & erwarteter Output
+["clever", "meek", "hurried", "nice"], "ly" ➞ ["cleverly", "meekly", "hurriedly", "nicely"]
+["new", "pander", "scoop"], "er" ➞ ["newer", "panderer", "scooper"]
+["bend", "sharpen", "mean"], "ing" ➞ ["bending", "sharpening", "meaning"]
+
+*/
+var endung ='ly';
+var stringEndungen = ["clever", "meek", "hurried", "nice"];
+for (var i=0; i<stringEndungen.length;i=i++){
+    endung= endung+stringEndungen[i];
+}
+console.log(stringEndungen);
+
+
+
+
+
+
+
+
+
+Sorry hatte einen totalen Blackout!!!!!
