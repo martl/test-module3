@@ -1,0 +1,212 @@
+console.log(`Hallo von Holgers Javascript Test`);
+// # JavaScript Test 
+
+// ## Vervollständige alle Fragen soweit es Dir möglich ist. Du darfst Google und Bücher benutzen, aber du darfst keine anderen Studenten oder Lehrer um Hilfe bitten. Genausowenig darfst du Code kopieren. 
+
+// ### Erstelle eine ${vorname}.js Datei und arbeite von da aus. Wenn du z.B. Martina mit Vornamen heißt, erstelle eine martina.js. Bitte vergiss nicht, die Fragen als Kommentar über deiner Antwort zu platzieren.
+
+// 1. Schreibe ein Programm, das den Städtenamen anzeigt, aber nur, wenn es mit "Los" oder "New" beginnt, sonst soll es zurückgeben: "Dieser Städtename beginnt nicht mit Los oder New". 
+
+function stadtnamentest(stadt) {
+    let stadtname = stadt;
+    let stadtArray = stadtname.split(" ")
+    if (stadtArray[0].toUpperCase() === "NEW" || stadtArray[0].toUpperCase() === "LOS") {
+
+        return (stadt);
+    } else {
+        return ("Dieser Städtename beginnt nicht mit Los oder New");
+    }
+}
+console.log(stadtnamentest(`New York`));
+console.log(stadtnamentest(`NEW Hampshire`));
+console.log(stadtnamentest(`new Berlin`));
+console.log(stadtnamentest(`Berlin`));
+
+
+// 2. Schreibe ein Programm, das die Summe von allen Elementen eines gegebenen Arrays von Integers ausrechnet. Die Länge des Arrays muss mindestens 3 sein.  
+// * **Beispiel**
+// * [5, 10, 15] ➞ 30
+
+function summeDesArrays(zahlenArray) {
+    let summe = 0;
+    for (let i = 0; i < zahlenArray.length; i++) {
+        summe += zahlenArray[i];
+    }
+    return summe;
+}
+console.log(summeDesArrays([1, 10, 19, 30]));
+
+
+// 3. Gegeben sind zwei Strings, firstName und lastName, gib einen einzelnen String zurück im Format "lastName, firstName".
+// * **Beispiele**
+// * "John", "Doe" ➞ "Doe, John"
+// * "Mary", "Jane" ➞ "Jane, Mary"
+
+function stringKoncatenierung(string1, string2) {
+    return `${string2}, ${string1}`;
+}
+console.log(stringKoncatenierung(`John`, `Doe`));
+
+
+// 4. Schreibe ein Programm dass ein Integer bekommt und true zurückgibt, wenn es durch 100 teilbar ist, ansonsten gibt es false zurück.
+// * **Beispiele**
+// * 1 ➞ false
+// * 1000 ➞ true
+// * 100 ➞ true
+
+function teilbarDurchHundert(integer) {
+    if (integer % 100 === 0) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+console.log(teilbarDurchHundert(1));
+console.log(teilbarDurchHundert(1000));
+console.log(teilbarDurchHundert(100));
+
+
+// 5. Schreibe ein Programm, dass eine String-Endung an jedes Teil eines Arrays anhängt.
+// * **Beispiele & erwarteter Output**
+// * ["clever", "meek", "hurried", "nice"], "ly" ➞ ["cleverly", "meekly", "hurriedly", "nicely"]
+// * ["new", "pander", "scoop"], "er" ➞ ["newer", "panderer", "scooper"]
+// * ["bend", "sharpen", "mean"], "ing" ➞ ["bending", "sharpening", "meaning"]
+
+function endungZufügen(stringArray, stringEndung) {
+    let stringMitEndungArray = [];
+
+    for (let i = 0; i < stringArray.length; i++) {
+        let newWord = stringArray[i] + stringEndung;
+        stringMitEndungArray.push(newWord);
+    }
+    return stringMitEndungArray;
+}
+
+console.log(endungZufügen(["clever", "meek", "hurried", "nice"], "ly"));
+console.log(endungZufügen(["new", "pander", "scoop"], "er"));
+
+
+// 6. Schreibe eine Programm, dass checkt, ob eine Zahl gerade oder ungerade ist und "gerade" für gerade Zahlen und "ungerade" für ungerade Zahlen zurückgibt..
+// * **Beispiele & erwarteter Output**
+// * 3 ➞ "3 ist ungerade"
+// * 146 ➞ "146 ist gerade"
+// * 19 ➞ "19 ist ungerade"
+
+function checkGeradeUngerade(zahl2) {
+    if (zahl2 % 2 === 0) {
+        return `Die Zahl ${zahl2} ist gerade`;
+    } else {
+        return `Die Zahl ${zahl2} ist ungerade`;
+
+    }
+}
+
+console.log(checkGeradeUngerade(3));
+console.log(checkGeradeUngerade(146));
+console.log(checkGeradeUngerade(19));
+
+
+// 7. Gegeben sind zwei von drei Winkeln eines Dreiecks, in Grad, z.B. 29° und 59°. Schreibe ein Programm, dass den fehlenden (dritten) Winkel berechnet und klassifiziert, entweder als "spitz", "rechter Winkel", oder "stumpf" basierend auf seiner Gradzahl.
+
+// * **Notizen**
+// * Ein spitzer Winkel ist kleiner als 90°.
+// * Ein rechter Winkel ist genau 90°.
+// * Ein stumpfer Winkel ist größer als 90°  (aber kleiner als 180°).
+// * Zum Beispiel: 11°, 20° sollte zurückgeben "stumpf", weil der fehlende Winkel wäre 149°, was ihn stumpf macht.
+
+// * **Beispiele**
+// * 27°, 59° ➞ Dann ist der dritte Winkel 92° also "stumpf"
+// * 135°, 11° ➞ Dann ist der dritte Winkel "spitz"
+// * 45°, 45° ➞ Dann ist der dritte Winkel "rechter Winkel"
+
+
+function winkelBestimmung(winkel1, winkel2) {
+    if (winkel1 <= 0 || winkel2 <= 0) {
+        return (`Fehlerhafte Eingabe, Winkel müssen größer 0° sein!`);
+    }
+    if (winkel1 + winkel2 >= 180) {
+        return (`Fehlerhafte Eingabe, das ist kein Dreieck!`);
+    }
+    let fehlenderWinkel = 180 - winkel1 - winkel2;
+    if (fehlenderWinkel === 90) {
+        return (`Der dritte Winkel ist ein rechter Winkel, er hat also 90°.`);
+    } else if (fehlenderWinkel < 90) {
+        return (`Der dritte Winkel ist ein spitzer Winkel, er hat ${fehlenderWinkel}°.`);
+    } else if (fehlenderWinkel > 90) {
+        return (`Der dritte Winkel ist ein stumpfer Winkel, er hat ${fehlenderWinkel}°.`);
+    }
+}
+
+console.log(winkelBestimmung(27, 59));
+console.log(winkelBestimmung(120, 63));
+console.log(winkelBestimmung(135, 11));
+console.log(winkelBestimmung(45, 45));
+console.log(winkelBestimmung(-1, 55));
+
+
+// 8. Erzeuge eine Variable mit dem String Wert "maria jane jones". Konvertiere jeden ersten Buchstaben zu Großbuchstaben. Stelle sicher, dass dein Code für alle möglichen Inputs mit drei Namen funktioniert, z.B. auch für "john james smith". 
+
+function grossschreibung (namen) {
+
+    let newNamenArray = [];
+    let namenArray = namen.split(" ")
+    
+    for (let i = 0; i < namenArray.length; i++) {
+    newLetter = namenArray[i][0].toUpperCase();
+        let newNamen = namenArray[i].replace(namenArray[i][0], newLetter);
+        newNamenArray.push(newNamen);
+    }
+    return newNamenArray.join(" ");
+
+}
+console.log(grossschreibung("maria jane jones"));
+console.log(grossschreibung("john james smith"));
+console.log(grossschreibung("prinz karl franz gustav von und zu hastenichtgesehen"));
+
+
+
+
+// 9. Schreibe ein Programm, dass einen String nimmt und die Anzahl der Wörter zurückgibt. Der String ist ein Satz.
+// * **Beispiele & erwarteter Output**
+// *  ➞ 4
+// * "Noch ein Beispiel für eine gute Messung" ➞ 7
+// * "JavaScript macht Spaß, oder?" ➞ 4
+
+function woerterzaehlen(satz) {
+    let anzahlWorte = satz.split(" ")
+    return `Der Satz "${satz}" hat ${anzahlWorte.length} Wörter.`;
+
+}
+
+console.log(woerterzaehlen("Dies ist ein Beispiel"));
+console.log(woerterzaehlen("Noch ein Beispiel für eine gute Messung"));
+console.log(woerterzaehlen("JavaScript macht Spaß, oder?"));
+
+
+// 10. Schreibe ein Programm, dass jeden Wert eines Arrays mit der Anzahl der Elemente im Array multipliziert und diese Werte in einem Array zurückgibt
+// * **Beispiele**
+// * [2, 3, 1, 0] (2 * 4), (3 * 4), (1 * 4), (0 * 4) ➞ [8, 12, 4, 0] 
+// * [4, 1, 1] ➞ [12, 3, 3]
+// * [1, 0, 3, 3, 7, 2, 1] ➞  [7, 0, 21, 21, 49, 14, 7]
+// * [0] ➞ [0]
+
+function arrayMalnehmen(zahlenArray2) {
+
+    let multilpizierterArray = [];
+
+    for (let i = 0; i < zahlenArray2.length; i++) {
+        let newZahl = zahlenArray2[i] * zahlenArray2.length;
+        multilpizierterArray.push(newZahl);
+    }
+    return `Jedes Item des Arrays ${zahlenArray2} multipliziert mit der Anzahl der Items (hier : ${zahlenArray2.length}) ergibt folgenden Array: ${multilpizierterArray}`;
+}
+
+console.log(arrayMalnehmen([2, 3, 1, 0]));
+console.log(arrayMalnehmen([4, 1, 1]));
+console.log(arrayMalnehmen([1, 0, 3, 3, 7, 2, 1]));
+console.log(arrayMalnehmen([0]));
+
+
+
+// ## Viel Erfolg! :)
